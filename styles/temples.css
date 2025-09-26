@@ -1,0 +1,156 @@
+:root {
+    --background-color : #0492C2;
+    --main-font: "roboto", sans-serif;
+    --main-color: white;
+    --haighlight-color: #23282B;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: var(--main-font);
+    box-sizing: border-box;
+}
+header {
+    background-color: var(--background-color);
+    font-size: 30px;
+    display: flex;
+    padding-left: 2rem;
+    align-items: center;
+    position: relative;
+}
+
+span {
+    padding: 0.5em;
+}
+
+nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--background-color);
+    display: none; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+nav a {
+    display: none;
+    max-width: none;
+    color: black;
+    text-align: center;
+    font-size: large;
+    padding: 1rem;
+    text-decoration: none;
+    font-size:xx-large;
+}
+
+nav a:hover{
+    background-color: #bbb;
+	text-decoration: underline;
+}
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    width: 2.2rem;                 
+    height: 2.2rem;                
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0;                    
+    display: flex;                 
+    align-items: center;
+    justify-content: center;
+    z-index: 70;
+}
+#menu::before,
+#menu.open::before {
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1;
+    pointer-events: none;
+    z-index: 71;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+.open span {
+    display: none;
+}
+.open nav {
+    display: block;
+}
+
+.open a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+}
+
+.open button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+main {
+    margin: 1rem auto; 
+    max-width: 800px; 
+    padding: .5rem;
+    color: var(--haighlight-color);
+}
+
+section {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 25px;
+    place-items: center;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.imghover:hover {
+    box-shadow: 0 0 20px #333;}
+
+
+footer {
+    text-align: center;
+    background-color: var(--background-color);
+    padding: 1em;
+}
+
+.year {
+    display: block;
+}
+
+
+
+
+
