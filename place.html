@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="Create a country page">
+    <meta name="author" content="Samuel Yosiaz Sandoval Ramírez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-larger.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>M é x i c o</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large-palacio.webp" media="(min-width: 750px)">
+                <img src="images/hero-small-palacio.webp" alt="Bellas Artes Palace" width="750" height="1500">
+            </picture>
+        <section id="data">
+            <h2>Data</h2>
+            <table class="info-table" aria-describedby="data">
+                <colgroup>
+                    <col class="first-column">
+                    <col class="second-column">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">Capital</th>
+                        <td>Mexico City</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Population</th>
+                        <td>126 millons (estimated)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Area</th>
+                        <td>1,964,375 km²</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Language</th>
+                        <td>Spanish (official)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Currency</th>
+                        <td>Mexican peso (MXN)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Time Zone</th>
+                        <td>UTC-8 to UTC-5 (varies by region)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Calling code</th>
+                        <td>+52</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Independence</th>
+                        <td>September 16, 1810</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <div id="weather">
+            <div class="weatherlarge">
+            <h2>Weather</h2>
+            <img src="images/cloud.svg" alt="Cloud icon" width="130" id="weatherimg">
+            </div>
+            <table class="info-table" aria-describedby="data">
+            <colgroup>
+                    <col class="first-column">
+                    <col class="second-column">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">Temperature</th>
+                        <td><span id="temperature"></span> °C</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Conditions</th>
+                        <td>Party Cloudy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wind</th>
+                        <td><span id="wind"> </span> km/h</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wind Chill</th>
+                        <td><span id="windchill"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="year">&copy;<span id="currentyear"></span> | Samuel Sandoval Ramírez | México</div>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

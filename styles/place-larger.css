@@ -1,0 +1,65 @@
+@media screen and (min-width: 750px) {
+
+    :root {
+    --main-color: #53D8FB;
+    --contrast-color: rgba(228, 0, 124);
+    --font: "Roboto", sans-serif;
+    --contrast-blurred-color: rgba(228, 0, 124, 0.65);
+    --background-blurred-color: rgba(255,255,255,0.65)
+    }
+
+    .hero img {
+        border-bottom: none;
+    }
+
+    header{
+        font-size: 25px;
+        padding: 0.1em;
+    }
+
+    .hero{
+        position: relative;
+    }
+    .hero picture{
+        width: 100%;
+        display:block;
+    }
+    main {
+        background-color: var(--main-color);
+    }
+
+    .weatherlarge {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        background-color: var(--contrast-blurred-color);
+        margin-top: 1em;
+    }
+
+    #weather img {
+        width:50px
+    }
+
+    #data {
+        position: absolute;
+        top: 5%;
+        background-color: var(--background-blurred-color);
+        width: 25%;
+        left: 1%;
+    }
+
+    #weather {
+        position: absolute;
+        bottom: 5%;
+        background-color: var(--background-blurred-color);
+        width: 25%;
+        right: 1%;
+    }
+
+    #data h2 {
+        background-color: var(--contrast-blurred-color);
+        width: 80%;
+        padding: 0.5em;
+    }
+}
