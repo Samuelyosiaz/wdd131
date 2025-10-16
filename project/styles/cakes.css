@@ -131,7 +131,10 @@ nav {
     background-color: var(--primary-color);
 }
 
-
+h1 {
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
 
 #cakes-section, #others-section {
     display:grid; 
