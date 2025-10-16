@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="Create a product review form">
+    <meta name="author" content="Samuel Yosiaz Sandoval Ramírez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script> 
+</head> 
+<body>
+    <main>
+        <h1>Product Review</h1>
+            <form method="get" action="review.html">
+                <div>
+                    <legend>Product Name</legend>
+                    <select id="product" name="product" required>
+                        <option disabled selected>Choose a Product...</option>
+                    </select>
+                </div>
+                <div>
+                    <legend>Overral Rating</legend>
+                    <section class="stars">
+                        <div class="star">
+                            <label for="onestar" class="star-label">&star;</label>
+                            <input type="radio" id="onestar" name="stars" value="1" required>
+                        </div>
+                        <div class="star">
+                            <label for="twostar" class="star-label">&star;&star;</label>
+                            <input type="radio" id="twostar" name="stars" value="2" required>
+                        </div>
+                        <div class="star">
+                            <label for="threestar" class="star-label">&star;&star;&star;</label>
+                            <input type="radio" id="threestar" name="stars" value="3" required>
+                        </div>
+                        <div class="star">
+                            <label for="fourstar" class="star-label">&star;&star;&star;&star;</label>
+                            <input type="radio" id="fourstar" name="stars" value="4" required>
+                        </div>
+                        <div class="star">
+                            <label for="fivestar" class="star-label">&star;&star;&star;&star;&star;</label>
+                            <input type="radio" id="fivestar" name="stars" value="5" required>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <legend>Date of Installation</legend>
+                    <input type="date" id="installationDate" name="installation" requiered>
+                </div>
+                <div>
+                    <legend>Which features did you find  useful in the product? <br>(check all that apply)</legend>
+                    <label><input type="checkbox" id="durability" name="durability"> Durability</label>
+                    <label><input type="checkbox" id="easyUse" name="easyUse"> Easy of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance"> Performance</label>
+                    <label><input type="checkbox" id="design" name="design"> Design</label>
+                </div>
+                <div>
+                    <legend>Written Review<aside>(Optional)</aside></legend>
+                    <input type="textarea" id="review" name="review">
+                </div>
+                <div>
+                    <legend>Your Name<aside>(Optional)</aside></legend>
+                    <input type="text" id="name" name="name">
+                </div>
+                <input type="submit" value="Share Review">
+
+            </form>
+    <footer>
+        <div class="year">&copy;<span id="currentyear"></span> | Samuel Sandoval Ramírez | México</div>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
